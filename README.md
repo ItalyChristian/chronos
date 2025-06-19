@@ -1,54 +1,42 @@
-# React + TypeScript + Vite
+# O que este projeto propõe de aprendizado (nível iniciante) 
+- Projeto proposto no curso do professor Luiz Otávio Miranda disponível na Udemy. Obrigada, prof :)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto SPA desenvolvido com React com Vite + SWC + Typescript 
+- Criado com Vite + SWC para compilação rápida
+- Todo código em Typescript (tipagem segura)
 
-Currently, two official plugins are available:
+Componentes reutilizáveis e organizados
+- Props e children quando necessário comunicar componentes 
+- Context API e Reducer para estado global 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Persistência de dados com localStorage 
+- Salva automaticamente o estado completo do app (tarefas, ciclos, configurações)
+- Restauração automática quando o usuário volta ao app
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Web Worker para Timer
+- Web Worker para manter o timer rodando mesmo se o usuário trocar de página
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Configurações Personalizáveis
+- Página de configuração para o usuário escolher: tempo de foco (trabalho), tempo de descanso curto, tempo de descanso longo
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+React Router Dom (rotas)
+- É utilizado neste projeto
+
+
+Formulários com Validação e UX 
+- Forms com validação básica e campos controlados
+- Feedback de erro para o usuário
+
+
+Notificações internas com Toastify
+- Feedback visual de sucesso, erro, alerta e informações
+- Notificação ao salvar configurações e ao completar ciclos
+
+
+Css Modules + Temas (Dark/Light Mode)
+- Estilização modular, sem conflito de classes 
+- Tema claro/escuro com botão de alternância e persistência no localStorage 
