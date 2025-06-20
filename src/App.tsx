@@ -10,6 +10,7 @@ import { Input } from "./components/Input";
 import { Cycles } from "./components/Cycles";
 import { Button } from "./components/Button";
 import { PlayCircleIcon } from "lucide-react";
+import { Footer } from "./components/Footer";
 
 export function App() {
   console.log("E ai");
@@ -34,7 +35,7 @@ export function App() {
             <Input
               id="meuInput"
               type="text"
-              labelText="labelText"
+              labelText="Tarefa:"
               placeholder="Digite aqui"
             />
           </div>
@@ -51,6 +52,10 @@ export function App() {
             <Button icon={<PlayCircleIcon />} />
           </div>
         </form>
+
+        <Container>
+          <Footer />
+        </Container>
       </Container>
     </>
   );
