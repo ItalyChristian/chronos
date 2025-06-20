@@ -1,62 +1,7 @@
 import "./styles/theme.css";
 import "./styles/global.css";
-
-// import { Heading } from "./components/Heading";
-import { Container } from "./components/Container";
-import { Logo } from "./components/Logo";
-import { Menu } from "./components/Menu";
-import { CountDown } from "./components/CountDown";
-import { Input } from "./components/Input";
-import { Cycles } from "./components/Cycles";
-import { Button } from "./components/Button";
-import { PlayCircleIcon } from "lucide-react";
-import { Footer } from "./components/Footer";
+import { Home } from "./pages/Home";
 
 export function App() {
-  console.log("E ai");
-
-  return (
-    <>
-      <Container>
-        <Logo />
-      </Container>
-
-      <Container>
-        <Menu />
-      </Container>
-
-      <Container>
-        <CountDown />
-      </Container>
-
-      <Container>
-        <form className="form" action="">
-          <div className="formRow">
-            <Input
-              id="meuInput"
-              type="text"
-              labelText="Tarefa:"
-              placeholder="Digite aqui"
-            />
-          </div>
-
-          <div className="formRow">
-            <p>lorem ipsum lorem ipsum</p>
-          </div>
-
-          <div className="formRow">
-            <Cycles />
-          </div>
-
-          <div className="formRow">
-            <Button icon={<PlayCircleIcon />} />
-          </div>
-        </form>
-
-        <Container>
-          <Footer />
-        </Container>
-      </Container>
-    </>
-  );
+  return <Home />;
 }
