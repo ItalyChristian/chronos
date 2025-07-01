@@ -1,8 +1,9 @@
+import { useRef } from "react";
+import styles from "./styles.module.css";
 import { PlayCircleIcon, StopCircleIcon } from "lucide-react";
 import { Button } from "../Button";
 import { Cycles } from "../Cycles";
 import { Input } from "../Input";
-import { useRef } from "react";
 import type { TaskModel } from "../../models/TaskModel";
 import { useTaskContext } from "../../contexts/TaskContext/useTaskContext";
 import { getNextCycle } from "../../utils/getNextCycle";
@@ -53,8 +54,8 @@ export const MainForm = () => {
   }
 
   return (
-    <form onSubmit={handleCreateNewTask} className="form" action="">
-      <div className="formRow">
+    <form onSubmit={handleCreateNewTask} className={styles.form} action="">
+      <div className={styles.formRow}>
         <Input
           id="meuInput"
           type="text"
@@ -66,17 +67,17 @@ export const MainForm = () => {
         />
       </div>
 
-      <div className="formRow">
+      <div className={styles.formRow}>
         <Tips />
       </div>
 
       {state.currentCycle > 0 && (
-        <div className="formRow">
+        <div className={styles.formRow}>
           <Cycles />
         </div>
       )}
 
-      <div className="formRow">
+      <div className={styles.formRow}>
         {!state.activeTask ? (
           <Button
             aria-label="Iniciar nova tarefa"
