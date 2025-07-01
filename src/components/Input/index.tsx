@@ -7,9 +7,9 @@ type InputProps = {
 
 export const Input = ({ id, labelText, type, ...rest }: InputProps) => {
   return (
-    <>
+    <div className={styles.container}>
       {labelText && <label htmlFor={id}>{labelText}</label>}
       <input id={id} className={styles.input} type={type} {...rest} />
-    </>
+    </div>
   );
 };

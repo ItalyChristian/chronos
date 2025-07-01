@@ -3,13 +3,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 1.5rem;
 }
 
 .formRow {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  gap: 2.4rem;
 }

@@ -80,7 +80,7 @@ export const Settings = () => {
       </Container>
 
       <Container>
-        <form onSubmit={handleSaveSettings} action="" className="form">
+        <form onSubmit={handleSaveSettings} action="" className={styles.form}>
           <div className={styles.formRow}>
             <Input
               id="workTime"
