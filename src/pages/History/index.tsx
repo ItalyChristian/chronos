@@ -10,8 +10,6 @@ import { formatDate } from "../../utils/formatDate";
 import { getTaskStatus } from "../../utils/getTaskStatus";
 import { sortTasks, type SortTasksOptions } from "../../utils/sortTasks";
 import { TaskActionTypes } from "../../contexts/TaskContext/taskActions";
-import { toast } from "react-toastify";
-import { Dialog } from "../../components/Dialog";
 import { showMessage } from "../../adapters/showMessage";
 
 export const History = () => {
@@ -59,6 +57,12 @@ export const History = () => {
 
     dispatch({ type: TaskActionTypes.RESET_STATE });
   }, [confirmClearHistory, dispatch]);
+
+  useEffect(() => {
+    return () => {
+      showMessage.dismiss();
+    };
+  }, []);
 
   useEffect(() => {
     setSortTaskOptions((prevState) => ({
