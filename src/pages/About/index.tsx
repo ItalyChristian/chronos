@@ -24,6 +24,15 @@ export function AboutPomodoro() {
             garantir descansos para evitar o cansaço mental.
           </p>
 
+          <p>
+            <small>
+              Este projeto foi idealizado pelo professor{" "}
+              <b>Luiz Otávio Miranda</b> e apenas <b>reproduzido</b> por mim. A
+              utilização e reprodução deste projeto foi devidamente autorizada
+              pelo mesmo. Valeu prof 😀!
+            </small>
+          </p>
+
           <img src="https://placehold.co/1920x1080" alt="" />
 
           <h2>Como funciona o Pomodoro tradicional?</h2>

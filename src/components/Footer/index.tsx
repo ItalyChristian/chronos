@@ -10,10 +10,6 @@ export function Footer() {
       <RouterLink href="/">
         Chronos Pomodoro &copy; {new Date().getFullYear()}
       </RouterLink>
-      <small>
-        Este projeto foi idealizado pelo professor <b>Luiz Otávio Miranda</b> e
-        apenas <b>reproduzido</b> por mim
-      </small>
     </footer>
   );
 }
