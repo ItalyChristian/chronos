@@ -24,7 +24,7 @@ export const History = () => {
         field: "startDate",
         direction: "desc",
       };
-    }
+    },
   );
 
   function handleSortTasks({ field }: Pick<SortTasksOptions, "field">) {
@@ -47,7 +47,7 @@ export const History = () => {
       "Tem certeza que deseja apagar todo o histórico de tarefas?",
       (confirmation) => {
         setConfirmClearHistory(confirmation);
-      }
+      },
     );
   }
 
@@ -79,21 +79,11 @@ export const History = () => {
     }));
   }, [state.tasks]);
 
-  const [name, setName] = useState("");
-
-  const handleChange = (event: any) => {
-    console.log("log1:" + event.target.value);
-    console.log("log2:" + name);
-    setName(event.target.value);
-  };
-
   return (
     <MainTemplate>
       <Container>
         <Heading>
           <span>Histórico</span>
-
-          <input value={name} onChange={handleChange} />
 
           {hasTasks && (
             <span className={styles.buttonContainer}>
