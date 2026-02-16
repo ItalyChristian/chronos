@@ -3,7 +3,7 @@
 - Projeto proposto no curso do professor Luiz Otávio Miranda disponível na Udemy. Obrigada, prof :)
 - Projeto base concluido em: 25h e 54min (iniciado dia 17/06 e concluído dia 01/07)
 
-Projeto SPA desenvolvido com React com Vite + SWC + Typescript
+Projeto SPA desenvolvido com React com <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" /> + <img src="https://img.shields.io/badge/SWC-282828?style=for-the-badge&logo=swc&logoColor=F8C457" /> + <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
 
 - Criado com Vite + SWC para compilação rápida
 - Todo código em Typescript (tipagem segura)
@@ -26,7 +26,7 @@ Configurações Personalizáveis
 
 - Página de configuração para o usuário escolher: tempo de foco (trabalho), tempo de descanso curto, tempo de descanso longo
 
-React Router Dom (rotas)
+<img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" /> (rotas)
 
 - É utilizado neste projeto
 
