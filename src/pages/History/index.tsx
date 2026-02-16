@@ -79,11 +79,22 @@ export const History = () => {
     }));
   }, [state.tasks]);
 
+  const [name, setName] = useState("");
+
+  const handleChange = (event: any) => {
+    console.log("log1:" + event.target.value);
+    console.log("log2:" + name);
+    setName(event.target.value);
+  };
+
   return (
     <MainTemplate>
       <Container>
         <Heading>
           <span>Histórico</span>
+
+          <input value={name} onChange={handleChange} />
+
           {hasTasks && (
             <span className={styles.buttonContainer}>
               <Button
